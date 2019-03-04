@@ -6,9 +6,24 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Hello 383!" 
+        <Label
+           Text="Hello 383!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+           VerticalOptions="CenterAndExpand"
+            />
+         <Label
+            FontSize="40"
+            Text="Learn you something today"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+        <Button
+            Text="Poke me"
+            VerticalOptions="End"
+            HorizontalOptions="Center"
+            Clicked="Button_Clicked" >
+        </Button>
 
+    </StackLayout>
+    
 </ContentPage>

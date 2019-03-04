@@ -102,7 +102,7 @@ namespace SP19.P05.Web
                 if (env.IsDevelopment())
                 {
                     // see: https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-2.2&tabs=visual-studio#run-the-cra-server-independently
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:3000");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:5000");
                 }
             });
         }
