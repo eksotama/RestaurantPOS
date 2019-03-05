@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SP19.P05.Web.Data;
+using SP19.P05.Web.Features;
 using SP19.P05.Web.Features.Authorization;
 using SP19.P05.Web.Hubs;
 using Swashbuckle.AspNetCore.Swagger;
@@ -51,6 +52,19 @@ namespace SP19.P05.Web
 
             var mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
+
+            //var mappingConfig = new AutoMapper.MapperConfiguration(mc =>
+            //{
+
+            //    mc.AddProfiles(typeof(AutoMapperPorfile).Assembly);
+            //});
+
+            //var mapper = mappingConfig.CreateMapper();
+            //services.AddSingleton(mapper);
+
+
+
+
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -102,7 +116,7 @@ namespace SP19.P05.Web
                 if (env.IsDevelopment())
                 {
                     // see: https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-2.2&tabs=visual-studio#run-the-cra-server-independently
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:3000");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:5000");
                 }
             });
         }
