@@ -6,7 +6,7 @@
         <StackLayout>
             <Label Text="Manager Options"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />\
+                HorizontalOptions="CenterAndExpand" />
             <Button
             Text="Adjust Tables"
             VerticalOptions="End"
