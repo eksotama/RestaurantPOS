@@ -3,9 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SP19.P05.Mobile.Forms.Page1">
     <StackLayout>
-        <Label Text="WE DID IT"
-               FontSize="50"
+        <Label Text="Customer or Manager Privileges?"
+               FontSize="30"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+        <Button
+            Text="Customer"
+            VerticalOptions="End"
+            HorizontalOptions="Center"
+            Clicked="Cust_Clicked" >
+        </Button>
+        <Button
+            Text="Manager"
+            VerticalOptions="End"
+            HorizontalOptions="Center"
+            Clicked="Manager_Clicked" >
+        </Button>
     </StackLayout>
 </ContentPage>

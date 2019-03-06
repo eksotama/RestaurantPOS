@@ -16,5 +16,13 @@ namespace SP19.P05.Mobile.Forms
 		{
 			InitializeComponent ();
 		}
-	}
+        async void Cust_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CustOptions());
+        }
+        async void Manager_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ManagerOption());
+        }
+    }
 }
