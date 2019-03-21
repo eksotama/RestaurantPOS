@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:SP19.P05.Mobile.Forms.TabbedDisplay"
+            x:Class="SP19.P05.Mobile.Forms.tabbedPage">
+
+
+    <!--Tab for scanning a table, requesting a table-->
+    <!--<local:CheckIn></local:CheckIn>-->
+    <!--Tab for looking at menu, ordering food-->
+    <local:OrderFromMenu></local:OrderFromMenu>
+    <!--Tab for requesting server assistance (may not be necessary)-->
+    <local:RequestServer></local:RequestServer>
+    <!--Tab for making payment and checking out-->
+    <local:CheckOut></local:CheckOut>
+</TabbedPage>
+    

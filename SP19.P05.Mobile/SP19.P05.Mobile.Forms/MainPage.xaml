@@ -17,6 +17,8 @@
                 <Label
                     TextColor="Purple"
                     FontSize="40"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
                     Text="The Black Willow Restaurant" 
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
@@ -29,7 +31,7 @@
                        IsPassword="True" />
                 <Label Text="New User? Click here!" 
                        TextColor="DimGray" />
-                <Label Text="To be implemented."
+                <Label Text="Click here to continue as guest."
                        TextColor="DimGray"/>
                 <Button
             Text="Continue"

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SP19.P05.Mobile.Forms.MgrOptions
+namespace SP19.P05.Mobile.Forms
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AdjustMenu : ContentPage
+	public partial class ViewBillMakePayment : ContentPage
 	{
-		public AdjustMenu ()
+		public ViewBillMakePayment ()
 		{
 			InitializeComponent ();
 		}

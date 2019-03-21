@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SP19.P05.Mobile.Forms.CustomerOptions
+namespace SP19.P05.Mobile.Forms.TabbedDisplay
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Order : ContentPage
+	public partial class CheckOut : ContentPage
 	{
-		public Order ()
+		public CheckOut ()
 		{
 			InitializeComponent ();
 		}

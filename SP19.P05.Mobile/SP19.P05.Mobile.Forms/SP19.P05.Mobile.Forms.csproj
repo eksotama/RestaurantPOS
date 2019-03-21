@@ -19,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,43 +29,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="MainNavPage.xaml.cs">
-      <DependentUpon>MainNavPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="ManagerOption.xaml.cs">
-      <DependentUpon>ManagerOption.xaml</DependentUpon>
-    </Compile>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v8.1\Mono.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="CustomerOptions\CheckIn.xaml">
+    <EmbeddedResource Update="QRpage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CustomerOptions\Order.xaml">
+    <EmbeddedResource Update="TabbedDisplay\CheckIn.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CustomerOptions\RequestServer.xaml">
+    <EmbeddedResource Update="TabbedDisplay\CheckOut.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CustomerOptions\Reserve.xaml">
+    <EmbeddedResource Update="TabbedDisplay\OrderFromMenu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CustOptions.xaml">
+    <EmbeddedResource Update="TabbedDisplay\RequestServer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MainNavPage.xaml">
+    <EmbeddedResource Update="TabbedDisplay\tabbedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ManagerOption.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MgrOptions\AdjustEmployees.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MgrOptions\AdjustMenu.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MgrOptions\AdjustTables.xaml">
+    <EmbeddedResource Update="ViewBillMakePayment.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
