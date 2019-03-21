@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SP19.P05.Web.Data;
 using SP19.P05.Web.Features;
 using SP19.P05.Web.Features.Authorization;
+using SP19.P05.Web.Features.UserFolder;
 using SP19.P05.Web.Hubs;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -29,14 +30,21 @@ namespace SP19.P05.Web
                 .AddEntityFrameworkStores<DataContext>();
 
             services.AddAuthentication()
-                .AddCookie();
+                .AddCookie();  
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSignalR();
 
+
+
+            //this is to use identity service installed
             services.AddDbContext<DataContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
+
+            //injecting IAuth and Auth as a scoped variable
+            services.AddScoped<IAuth, Auth>();
+
 
             services.AddSwaggerGen(c =>
             {

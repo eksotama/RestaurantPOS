@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SP19.P05.Web.Features.Authorization;
 using SP19.P05.Web.Features.Menus;
+using SP19.P05.Web;
 
 namespace SP19.P05.Web.Data
 {
@@ -20,7 +21,8 @@ namespace SP19.P05.Web.Data
         public DbSet<SP19.P05.Web.Features.Menus.MenuDto> MenuDto { get; set; }
 
         public DbSet<SP19.P05.Web.Features.LineItems.MenuItem> MenuItem { get; set; }
-
+        public DbSet<SP19.P05.Web.Features.Tables.Table> Table { get; set; }
+        public DbSet<SP19.P05.Web.Features.UserFolder.UserTable> UserTables { get; set; }
 
     }
 }

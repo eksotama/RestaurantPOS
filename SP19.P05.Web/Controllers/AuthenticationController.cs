@@ -34,5 +34,8 @@ namespace SP19.P05.Web.Controllers
             await signInManager.SignInAsync(user, false, "Password");
             return Ok(result);
         }
+
+    
+        
     }
 }
