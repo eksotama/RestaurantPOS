@@ -3,5 +3,6 @@
     public static class UserRoles
     {
         public const string Customer = nameof(Customer);
+        public const string Cook = nameof(Cook);
     }
 }
