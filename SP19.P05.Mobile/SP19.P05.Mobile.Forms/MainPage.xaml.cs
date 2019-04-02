@@ -17,9 +17,5 @@ namespace SP19.P05.Mobile.Forms
         {
             await Navigation.PushModalAsync(new CreateUser());
         }
-        async void OnTapGestureRecognizerTapped(object sender, System.EventArgs e)
-        {
-            await Navigation.PushModalAsync(new CreateUser());
-        }
     }
 }
