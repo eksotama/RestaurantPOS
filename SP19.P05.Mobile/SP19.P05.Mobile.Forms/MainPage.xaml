@@ -17,8 +17,6 @@
                 <Label
                     TextColor="Purple"
                     FontSize="40"
-                    FontAttributes="Bold"
-                    HorizontalTextAlignment="Center"
                     Text="The Black Willow Restaurant" 
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
@@ -30,16 +28,20 @@
                        Placeholder="Password"
                        IsPassword="True" />
                 <Label Text="New User? Click here!" 
-                       TextColor="DimGray" />
-                <Label Text="Click here to continue as guest."
-                       TextColor="DimGray"/>
+                       TextColor="DimGray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnTapGestureRecognizerTapped"
+                            NumberOfTapsRequired="1" 
+                            />
+                    </Label.GestureRecognizers>
+                </Label>
                 <Button
             Text="Continue"
             VerticalOptions="End"
             HorizontalOptions="Center"
             Clicked="Button_Clicked" >
                 </Button>
-
             </StackLayout>
         </Grid>
     </ContentPage.Content>

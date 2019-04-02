@@ -35,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="createUser.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="QRpage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
