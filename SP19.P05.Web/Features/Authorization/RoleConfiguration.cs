@@ -13,7 +13,8 @@ namespace SP19.P05.Web.Features.Authorization
                 new Role {Id = 1, Name = "Admin", NormalizedName = "ADMIN"},
                 new Role {Id = 2, Name = "Customer", NormalizedName = "CUSTOMER"},
                 new Role {Id = 3, Name = "Manager", NormalizedName = "MANAGER"},
-                new Role {Id = 4, Name = "Server", NormalizedName = "SERVER"}
+                new Role {Id = 4, Name = "Server", NormalizedName = "SERVER"},
+                new Role {Id = 5, Name = "Cook", NormalizedName = "COOK"}
             });
         }
     }

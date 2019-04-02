@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using AutoMapper;
 using SP19.P05.Common.Features.Authorization;
+using SP19.P05.Web.Features.Cook;
 using SP19.P05.Web.Features.Customers;
 
 namespace SP19.P05.Web.Features.Authorization
@@ -18,6 +19,7 @@ namespace SP19.P05.Web.Features.Authorization
 
 
             CreateMap<CreateCustomerDto, User>();
+            CreateMap<CreateCookDto, User>();
         }
     }
 }
