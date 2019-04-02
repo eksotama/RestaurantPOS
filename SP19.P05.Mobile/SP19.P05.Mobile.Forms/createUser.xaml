@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SP19.P05.Mobile.Forms.CreateUser">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="16">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0">
+
+                    <Label Text="Enter the following information to register."></Label>
+                    <Label Text="Username" />
+                    <Entry Text="{Binding Username}"
+                       Placeholder="Username" />
+                    <Label Text="Password" />
+                    <Entry Text="{Binding Password}"
+                       Placeholder="Password" />
+                    <Label Text="E-mail address" />
+                    <Entry Text="{Binding Email}"
+                       Placeholder="E-mail" />
+                    <Label Text="Address 1" />
+                    <Entry Text="{Binding AddressOne}"
+                       Placeholder="Address 1" />
+                    <Label Text="Address 2" />
+                    <Entry Text="{Binding AddressTwo}"
+                       Placeholder="Address 2" />
+                    <Label Text="City" />
+                    <Entry Text="{Binding City}"
+                       Placeholder="City" />
+                    <Label Text="Street" />
+                    <Entry Text="{Binding Street}"
+                       Placeholder="Street" />
+                    <Label Text="Zip Code" />
+                    <Entry Text="{Binding ZipCode}"
+                       Placeholder="Zip Code" />
+                    <Button Text="Submit"
+                       Clicked="Button_Clicked">
+                    </Button>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

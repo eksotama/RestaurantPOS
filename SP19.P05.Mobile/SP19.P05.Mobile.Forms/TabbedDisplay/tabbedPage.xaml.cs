@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SP19.P05.Mobile.Forms.CustomerOptions
+namespace SP19.P05.Mobile.Forms
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class RequestServer : ContentPage
+	public partial class tabbedPage : TabbedPage
 	{
-		public RequestServer ()
+		public tabbedPage ()
 		{
 			InitializeComponent ();
 		}

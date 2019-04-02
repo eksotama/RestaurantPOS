@@ -11,7 +11,11 @@ namespace SP19.P05.Mobile.Forms
         }
         async void Button_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new Page1());
+            await Navigation.PushModalAsync(new tabbedPage());
+        }
+        async void OnTapGestureRecognizerTapped(object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CreateUser());
         }
         async void OnTapGestureRecognizerTapped(object sender, System.EventArgs e)
         {

@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+
 namespace SP19.P05.Mobile.Droid
 {
     [Activity(Label = "SP19.P05.Mobile", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -18,8 +19,16 @@ namespace SP19.P05.Mobile.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new Forms.App());
+        }
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            global::ZXing.Net.Mobile.Android.PermissionsHandler.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }
