@@ -7,6 +7,7 @@ namespace SP19.P05.Web.Features.Cook
         public CookMapping()
         {
             CreateMap<Cook, CookDto>()
+                .ForMember(x => x.Email, o => o.MapFrom(x => x.User.Email))
                 .ReverseMap()
                 .ForMember(x => x.Id, o => o.Ignore()); //don't allow Id to be assigned by DTOs
 
