@@ -11,37 +11,56 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <StackLayout Grid.Row="0">
-
-                    <Label Text="Enter the following information to register."></Label>
-                    <Label Text="Username" />
-                    <Entry Text="{Binding Username}"
-                       Placeholder="Username" />
-                    <Label Text="Password" />
-                    <Entry Text="{Binding Password}"
-                       Placeholder="Password" />
-                    <Label Text="E-mail address" />
-                    <Entry Text="{Binding Email}"
-                       Placeholder="E-mail" />
-                    <Label Text="Address 1" />
-                    <Entry Text="{Binding AddressOne}"
-                       Placeholder="Address 1" />
-                    <Label Text="Address 2" />
-                    <Entry Text="{Binding AddressTwo}"
-                       Placeholder="Address 2" />
-                    <Label Text="City" />
-                    <Entry Text="{Binding City}"
-                       Placeholder="City" />
-                    <Label Text="Street" />
-                    <Entry Text="{Binding Street}"
+                <!--<StackLayout Grid.Row="0">
+              
+                <Label Text="Enter the following information to register."></Label>
+                <Label Text="Username" />
+                <Entry Text="{Binding Username}"
+                   Placeholder="Username" />
+                <Label Text="Password" />
+                <Entry Text="{Binding Password}"
+                   Placeholder="Password" />
+                <Label Text="E-mail address" />
+                <Entry Text="{Binding Email}"
+                   Placeholder="E-mail" />
+                <Label Text="Address 1" />
+                <Entry Text="{Binding AddressOne}"
+                   Placeholder="Address 1" />
+                <Label Text="Address 2" />
+                <Entry Text="{Binding AddressTwo}"
+                   Placeholder="Address 2" />
+                <Label Text="City" />
+                <Entry Text="{Binding City}"
+                   Placeholder="City" />
+                <Label Text="Street" />
+                <Entry Text="{Binding Street}"
                        Placeholder="Street" />
                     <Label Text="Zip Code" />
                     <Entry Text="{Binding ZipCode}"
                        Placeholder="Zip Code" />
                     <Button Text="Submit"
-                       Clicked="Button_Clicked">
+                       Clicked="submit_Clicked">
                     </Button>
-                </StackLayout>
+                </StackLayout>-->
+
+                <StackLayout>
+    <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    <Entry Placeholder="Username" x:Name="username" />
+    <Entry Placeholder="Email" x:Name="email" />
+    <Label Text="Include a a Uppercase ,number and non alphabetical character" />
+    <Entry  IsPassword="true" Placeholder="Password" x:Name="password" />
+    <Entry Placeholder="Address 1" x:Name="addressOne" />
+    <Entry Placeholder="Address 2" x:Name="addressTwo" />
+    <Entry Placeholder="City" x:Name="city" />
+    <Label Text="Must be ,LA for Louisiana" />
+    <Entry Placeholder="State" x:Name="state" />
+    <Label Text="Must be 5 digit" />
+                    <Entry Placeholder="Zip-code" x:Name="zipCode" />
+    <!-- <Button Text="Submit" Clicked="Button_Clicked" /> -->
+    <Button Text="Post to a REST URL" Clicked="Post_Clicked" />
+</StackLayout>
+
+
             </Grid>
         </ScrollView>
     </ContentPage.Content>

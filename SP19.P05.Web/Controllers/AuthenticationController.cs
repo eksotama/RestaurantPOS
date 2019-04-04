@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SP19.P05.Web.Data;
@@ -21,6 +22,7 @@ namespace SP19.P05.Web.Controllers
         [HttpPost]
         public async Task<ActionResult<SignInResult>> Login(LoginDto dto)
         {
+            Debug.Print("<<<<<<<<<<<login>>>>>>>>");
             var user = await userManager.FindByNameAsync(dto.Username);
             if (user == null)
             {

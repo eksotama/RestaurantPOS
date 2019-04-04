@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
@@ -35,6 +36,9 @@ namespace SP19.P05.Web.Controllers
         [HttpPost]
         public async Task<ActionResult<CustomerDto>> PostAsync(CreateCustomerDto dto)
         {
+
+
+            Debug.Print("Post request hit>>>>>>>>>>>");
             using (var transaction = await dataContext.Database.BeginTransactionAsync())
             {
                 var user = new User();

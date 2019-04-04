@@ -22,11 +22,10 @@
                     VerticalOptions="CenterAndExpand"
                 />
                 <Label Text="Login" />
-                <Entry Text="{Binding Username}"
-                       Placeholder="Username" />
-                <Entry Text="{Binding Password}"
-                       Placeholder="Password"
-                       IsPassword="True" />
+                <Entry Placeholder="Username" x:Name="username" />
+
+                <Entry IsPassword="true" Placeholder="Password" x:Name="password" />
+
                 <Label Text="New User? Click here!" 
                        TextColor="DimGray">
                     <Label.GestureRecognizers>
@@ -37,10 +36,8 @@
                     </Label.GestureRecognizers>
                 </Label>
                 <Button
-            Text="Continue"
-            VerticalOptions="End"
-            HorizontalOptions="Center"
-            Clicked="Button_Clicked" >
+            Text="login"
+            Clicked="Post_Clicked" >
                 </Button>
             </StackLayout>
         </Grid>
