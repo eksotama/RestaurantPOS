@@ -4,5 +4,6 @@
     {
         public const string Customer = nameof(Customer);
         public const string Cook = nameof(Cook);
+        public const string Server = nameof(Server);
     }
 }
