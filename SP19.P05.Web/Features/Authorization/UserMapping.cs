@@ -21,7 +21,7 @@ namespace SP19.P05.Web.Features.Authorization
 
             CreateMap<CreateCustomerDto, User>();
             CreateMap<CreateCookDto, User>();
-            CreateMa<CreateServerDto, User>();
+            CreateMap<CreateServerDto, User>();
         }
     }
 }
